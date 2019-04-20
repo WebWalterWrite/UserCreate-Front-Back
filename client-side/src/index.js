@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 // import responsive styke
-import media from '../src/utils/responsive';
+import media from './utils/responsive';
 
 // import image
 import background from '../src/assets/images/agus-dietrich-747398-unsplash.jpg';

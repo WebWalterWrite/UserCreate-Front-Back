@@ -1,9 +1,12 @@
 
 /**
- * @description - Créer un user
-
+ * @description - test
  */
-export const createUser =  (req, res) =>{
-     res.send('route user create')
-};
+export const getuser = async (req, res) => {
+
+  console.log(req.user)
+}
+
+
+
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import SignIn from '../form/SignIn';
+import SignIn from './SignIn';
 
 it('renders Form', () => {
     const tree = renderer

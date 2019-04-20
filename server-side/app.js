@@ -1,10 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import userRoutes from './src/routes/user';
+import userRoutes from './src/routes/user.route';
+import oAuthRoutes from './src/routes/oAuth.route';
 import cookieSession from 'cookie-session';
 import passport from 'passport';
-import  './src/oauth/oAuth';
-import { Keys } from './src/keys';
+import './src/oauth/oAuth';
+import Keys from './src/keys';
 const { cookie: { key } } = Keys;
 const app = express();
 
@@ -24,6 +25,7 @@ app.use(passport.session());
 
 
 app.use('/api', userRoutes);
+app.use('/api/auth',oAuthRoutes)
 
 
 export default app;
